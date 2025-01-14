@@ -67,12 +67,12 @@ const Home = () => {
 	};
 
 	return (
-		<div className="min-h-screen w-full bg-[#E2E2E2]">
+		<div className="min-h-screen w-full">
 			<Header />
 			<div className="max-w-6xl mx-auto p-6">
 				<div className="grid gap-6">
 					{analyser && (
-						<div className="w-full h-[400px]">
+						<div className="w-full bg-orange-50 p-1 rounded-lg shadow-lg h-[400px]">
 							<Visualization analyser={analyser} />
 						</div>
 					)}
@@ -82,12 +82,12 @@ const Home = () => {
 					<div className="flex items-center justify-center gap-4">
 						<button
 							onClick={togglePlayPause}
-							className="bg-white px-4 text-rose-500 shadow-md hover:opacity-60 py-2 rounded-md"
+							className="bg-white px-4 text-rose-400 shadow-md hover:opacity-60 py-2 rounded-lg"
 							disabled={!audioSource}
 						>
 							{isPlaying ? "Pause" : "Play"}
 						</button>
-						<div className="bg-white flex align-center justify-center gap-2 px-2 text-rose-500 shadow-md py-2 rounded-md">
+						<div className="bg-white flex align-center justify-center gap-2 p-2 text-rose-500 shadow-md rounded-lg">
 							<label htmlFor="volume">🔊</label>
 							<input
 								type="range"
@@ -97,7 +97,7 @@ const Home = () => {
 								step="0.01"
 								value={volume}
 								onChange={(e) => setVolume(parseFloat(e.target.value))}
-								className="w-32 accent-rose-400"
+								className="w-32 accent-rose-300"
 							/>
 						</div>
 					</div>

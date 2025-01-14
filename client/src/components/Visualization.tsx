@@ -150,10 +150,7 @@ const Visualization = ({ analyser }: { analyser: AnalyserNode }) => {
 	}, [analyser]);
 
 	return (
-		<div
-			ref={containerRef}
-			className="w-full h-full border-dashed border-3 border-slate-500 rounded relative"
-		>
+		<div ref={containerRef} className="w-full h-full relative">
 			<canvas ref={canvasRef} style={{ background: "transparent" }} />
 		</div>
 	);

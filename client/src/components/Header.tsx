@@ -1,14 +1,12 @@
-import GitHub from "./GitHub";
-
 const Header = () => {
 	return (
-		<header className="mt-3 p-2 rounded-md shadow-md bg-white w-fit m-auto">
-			<div className="mx-auto flex gap-2 w-fit">
-				<h1 className="text-xl font-bold bg-rose-400 self-center text-transparent bg-clip-text">
+		<header className="mt-3 p-2 rounded-md w-fit m-auto">
+			<div className="mx-auto mb-1 flex gap-2 w-fit">
+				<h1 className="text-5xl drop-shadow font-bold bg-rose-400 self-center text-transparent bg-clip-text">
 					Visuaudio
 				</h1>
-				<GitHub />
 			</div>
+			<p className="mx-auto text-xl drop-shadow w-fit text-red-400">Minimalist music visualizer</p>
 		</header>
 	);
 };
